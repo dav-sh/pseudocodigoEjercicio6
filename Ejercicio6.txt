@@ -1,0 +1,22 @@
+Algoritmo Ejercicio6
+	Dimension edades[100]
+	contador <- 0
+	suma <- 0
+	menores <- 0
+	mayores <- 0
+	suma2 <- 0
+	Mientras contador<100 Hacer
+		Si edades[contador]<25 Entonces
+			suma <- suma+edades[contador]
+			menores <- menores+1
+		FinSi
+		Si edades[contador]>=25 Entonces
+			suma2 <- suma2+edades[contador]
+			mayores <- mayores+1
+		FinSi
+	FinMientras
+	prommenores <- suma/menores
+	prommayores <- suma2/mayores
+	Escribir 'Promedio edades menores',prommenores
+	Escribir 'Promedio edades mayores',prommayores
+FinAlgoritmo
